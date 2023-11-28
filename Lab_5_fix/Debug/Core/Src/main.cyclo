@@ -1,0 +1,11 @@
+main.c:85:6:disp_row	10
+main.c:145:6:draw_snake	11
+main.c:169:6:input	9
+main.c:183:6:update	13
+main.c:243:5:main	5
+main.c:336:6:SystemClock_Config	3
+main.c:378:13:MX_ADC3_Init	3
+main.c:430:13:MX_SPI1_Init	2
+main.c:468:13:MX_TIM2_Init	4
+main.c:516:13:MX_GPIO_Init	1
+main.c:559:6:Error_Handler	1
