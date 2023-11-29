@@ -13,9 +13,9 @@
 интерфейса SPI и связи со светодиодной панелью P10 с
 размерностью 16x32 пикселей.
 
-Листинги программного кода предоставлены в директории `/Lab_1/Lab_5_fix/Core/src`
-в файлах `/main.c` [main.c](Lab_1/Lab_5_fix/Core/Src/main.c)  и
-`/stm32f4xx_it.c` [stm32f4xx_it.c](Lab_1/Lab_5_fix/Core/Src/stm32f4xx_it.c)
+Листинги программного кода предоставлены в директории `/Lab_1/Lab_5_fix/Core/Src/`
+в файлах [main.c](Lab_1/Lab_5_fix/Core/Src/main.c) и
+[stm32f4xx_it.c](Lab_1/Lab_5_fix/Core/Src/stm32f4xx_it.c).
 
 
 ### Serial Peripheral Interface - SPI
@@ -48,7 +48,13 @@
 в зависимости от производителя аппаратных средств,
 при этом возможны следующие варианты:
 
-![img_1.png](images/img_1.png)
+| Порт | Master                                | Slave         |
+|------|---------------------------------------|---------------|
+| MISO | SOMI, SDI, RX                         | SOMI, SDO, TX |
+| MOSI | SIMO, SDO, TX                         | SIMO, SDI, RX |
+| SCLK | SCK, CLK, SPC (SPI serial port clock) | <---          | 
+| SS   | nCS, CS, CSB, CSN, NSS, nSS, STE, SYN | <---          |
+
 
 #### Прием и передача данных в SPI
 Передача осуществляется пакетами.
@@ -183,8 +189,11 @@
 
 `Раздел находится в работе`
 
-Листинги программного кода предоставлены в директории `/Lab_2_vs`
-в файлах `/Core/src/main.c` и `/Core/src/stm32f4xx_it.c`
+Листинги программного кода предоставлены в директории `Lab_2/STM32CubeIDE/Lab_2_vs/Core/Src/`
+в файлах [main.c](Lab_2/STM32CubeIDE/Lab_2_vs/Core/Src/main.c),
+[stm32f1xx_it.c](Lab_2/STM32CubeIDE/Lab_2_vs/Core/Src/stm32f1xx_it.c),
+а так же в директории `Lab_2/STM32CubeIDE/Lab_2_vs/USB_DEVICE/App/`
+[usbd_cdc_if.c](Lab_2/STM32CubeIDE/Lab_2_vs/USB_DEVICE/App/usbd_cdc_if.c).
 
 ### Universal Serial Bus - USB
 
