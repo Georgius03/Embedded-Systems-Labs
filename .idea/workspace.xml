@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fb1c639-afc7-4f80-9320-b10b8c738433" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/Lab1connection.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +38,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Georg\OneDrive\Документы\GitHub\Embedded-Systems-Labs\images" />
       <recent name="C:\Users\Georg\OneDrive\Документы\GitHub\Embedded-Systems-Labs\Lab_2\RPi script" />
       <recent name="C:\Users\Georg\OneDrive\Документы\GitHub\Embedded-Systems-Labs\Lab_1" />
-      <recent name="C:\Users\Georg\OneDrive\Документы\GitHub\Embedded-Systems-Labs\images" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Lab_2_vs">

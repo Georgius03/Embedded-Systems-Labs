@@ -175,6 +175,9 @@
 
 ![img.png](images/Lab1Pinout.png)
 
+Схема подключения электроники
+
+![img.png](images/Lab1connection.png)
 ## Лабораторная работа №2 работа с USB, RaspberryPi, STM32 и P10 Led Board
 
 В ходе данной работы необходимо связать одноплатный компьютер **Raspberry Pi** и отладочную плату с микроконтроллером
