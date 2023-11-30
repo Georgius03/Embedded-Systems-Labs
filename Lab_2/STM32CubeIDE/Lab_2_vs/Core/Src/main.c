@@ -57,7 +57,7 @@ TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim4;
 
 /* USER CODE BEGIN PV */
-int8_t buffer;
+int8_t buffer[1];
 //uint8_t buffer[64];
 char *heartbeat = "HEARTBEAT\n";
 
@@ -195,7 +195,7 @@ int main(void)
 		//		CDC_Transmit_FS((uint8_t *) heartbeat, strlen(heartbeat));
 		//		HAL_Delay(100);
 
-		ppp = buffer;
+		ppp = buffer[0];
 
 		// случай, когда массив не заполнен
 		if (hitbox1[0] == 0) {
@@ -203,7 +203,7 @@ int main(void)
 				if (hitbox1[i] == 0) {
 					hitbox1[i] = ppp;
 					break;
-				}
+		        }
 			}
 		}
 
