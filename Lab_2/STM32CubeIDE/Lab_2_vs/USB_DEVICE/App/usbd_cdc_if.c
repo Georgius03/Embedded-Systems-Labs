@@ -49,7 +49,7 @@
   */
 
 /* USER CODE BEGIN PRIVATE_TYPES */
-extern uint8_t buffer[64];
+extern uint8_t buffer[1];
 /* USER CODE END PRIVATE_TYPES */
 
 /**
