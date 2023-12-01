@@ -96,7 +96,7 @@ def main():
         f5 = 2 * pow(T2, 2) * f1
         # print(f1, f2, f3, f4, f5)
         F = (f2 + f3 + f4) / f5 + Fv
-        ppp = round(F * 10, 0)
+        ppp = int(round(F * 10, 0))
 
         ser.write(struct.pack('B', ppp))
         print(ppp)
