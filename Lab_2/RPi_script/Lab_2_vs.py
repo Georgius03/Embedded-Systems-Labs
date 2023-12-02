@@ -37,7 +37,7 @@ def timer():
         if not thread_alive:
             break
         t += 0.01
-        tp += 0.01
+        tp += 0.04
         time.sleep(0.01)
 
 
