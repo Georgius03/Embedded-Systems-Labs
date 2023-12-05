@@ -82,6 +82,7 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+// функция для загрузки данных по spi
 void disp_row(int row){
 
 
@@ -142,6 +143,7 @@ void disp_row(int row){
 	 HAL_GPIO_WritePin(nOE_GPIO_Port, nOE_Pin, GPIO_PIN_RESET);
   }
 
+// функция рисования змейки
 void draw_snake() {
     for (int16_t y = 0; y < HEIGHTs; y++) {
         for (int16_t x = 0; x < WIDTHs; x++) {
@@ -165,7 +167,7 @@ void draw_snake() {
         }
     }
 }
-
+// функция обработки нажатия кнопки
 void input() {
 	uint16_t b = adc_button;
 	switch (b) {
@@ -179,7 +181,7 @@ void input() {
 			if (direction != 1) { direction = 3; break; }
 	}
 }
-
+// функция расчёта змейки
 void update() {
 	// moving
     for (int16_t i = snakeLength - 1; i > 0; i--) {
@@ -271,7 +273,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
 
   srand(6);
-
+  // задание начальных условий положения змейки
   snakeX[0] = WIDTHs / 2;
   snakeY[0] = HEIGHTs / 2;
   snakeX[1] = snakeX[0] - 1;
@@ -280,6 +282,7 @@ int main(void)
   snakeY[2] = snakeY[1];
 //  foodX = food_point[0] / 100;
 //  foodY = food_point[0] % 100;
+  // задание начального положения еды
   foodX = rand() % WIDTHs;
   foodY = rand() % HEIGHTs;
 
@@ -291,10 +294,12 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
+	// Играй пока не врезался
 	if (!gameOver) {
 		draw_snake();
 		input();
 		update();
+		// Загрузка данных в панель
 		disp1color_UpdateFromBuff();
 		prepare_data();
 		for(uint8_t i=0; i<20; i++){
