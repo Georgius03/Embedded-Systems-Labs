@@ -299,7 +299,7 @@ int main(void)
 		draw_snake();
 		input();
 		update();
-		// Загрузка данных в панель
+		// обновление данных в панели
 		disp1color_UpdateFromBuff();
 		prepare_data();
 		for(uint8_t i=0; i<20; i++){
@@ -309,14 +309,18 @@ int main(void)
 			  disp_row(3);
 		  }
 	}
+	// в случае проигрыша выражаю соболезнования
 	else {
+		// загрузка строки gameover
 		sprintf(scor, "%d", score);
 		char *pMyStr[100];
 		snprintf(pMyStr, sizeof pMyStr, "%s%s", gameover, scor);
 		uint16_t strSize = strlen(pMyStr);
 		uint8_t symbolDelay = 2;
+		// печать строки gameover
 		for (int16_t x = 30; x > -((strSize + symbolDelay) * f6x8_MONO_WIDTH); x--){
 		  disp1color_printf(x, 4, FONTID_6X8M, pMyStr);
+		  // обновление данных в панели
 		  disp1color_UpdateFromBuff();
 		  prepare_data();
 		  for(uint8_t i=0; i<20; i++){

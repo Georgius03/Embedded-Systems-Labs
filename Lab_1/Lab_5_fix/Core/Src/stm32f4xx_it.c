@@ -219,10 +219,12 @@ void ADC_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
+	// считывание значения клавиатуры
 	HAL_ADC_Start_IT(&hadc3);
 	adc_reg_val = HAL_ADC_GetValue(&hadc3);
 	HAL_ADC_Stop_IT(&hadc3);
 
+	// пеобразование уровня сигнала в кнопку управления
 	if (3700 <= adc_reg_val && adc_reg_val <= 3800) {
 		adc_button = 1;
 	}
