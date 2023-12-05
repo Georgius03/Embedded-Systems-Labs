@@ -131,7 +131,7 @@
 
 ![img.png](images/P10_led_board.png)
 
-![img.png](images/P10 backside.png)
+![img.png](images/P10_backside.png)
 
 Распиновка входного разъёма
 
