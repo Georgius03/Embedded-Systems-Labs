@@ -228,6 +228,7 @@ void USB_LP_CAN1_RX0_IRQHandler(void)
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
+	// Отправка данных и мигание светодиодом для индикации
 	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 	CDC_Transmit_FS((uint8_t *) heartbeat, strlen(heartbeat));
   /* USER CODE END TIM4_IRQn 0 */

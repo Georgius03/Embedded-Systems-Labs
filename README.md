@@ -17,6 +17,7 @@
 в файлах [main.c](Lab_1/Lab_5_fix/Core/Src/main.c) и
 [stm32f4xx_it.c](Lab_1/Lab_5_fix/Core/Src/stm32f4xx_it.c).
 
+Результат работы: https://www.youtube.com/watch?v=JZH4szBJeWE
 
 ### Serial Peripheral Interface - SPI
 (**Serial Peripheral Interface**, **SPI bus** —
@@ -130,7 +131,7 @@
 
 ![img.png](images/P10_led_board.png)
 
-![img_1.png](images/schemes.png)
+![img.png](images/P10 backside.png)
 
 Распиновка входного разъёма
 
@@ -181,6 +182,9 @@
 Схема подключения электроники
 
 ![img.png](images/Lab1connection.png)
+
+![img.png](images/Lab_1_final.png)
+
 ## Лабораторная работа №2 работа с USB, RaspberryPi, STM32 и P10 Led Board
 
 В ходе данной работы необходимо связать одноплатный компьютер **Raspberry Pi** и отладочную плату с микроконтроллером
@@ -193,13 +197,13 @@
 Для выполнения задания необходимо изучить принцип работы **USB** соединения и базовые команды для работы
 с **RPi** и её **GPIO** контактами.
 
-`Раздел находится в работе`
-
 Листинги программного кода предоставлены в директории `Lab_2/STM32CubeIDE/Lab_2_vs/Core/Src/`
 в файлах [main.c](Lab_2/STM32CubeIDE/Lab_2_vs/Core/Src/main.c),
 [stm32f1xx_it.c](Lab_2/STM32CubeIDE/Lab_2_vs/Core/Src/stm32f1xx_it.c),
 а так же в директории `Lab_2/STM32CubeIDE/Lab_2_vs/USB_DEVICE/App/`
 [usbd_cdc_if.c](Lab_2/STM32CubeIDE/Lab_2_vs/USB_DEVICE/App/usbd_cdc_if.c).
+
+Результат работы: https://www.youtube.com/watch?v=b9OfJZ8gFAQ
 
 ### Universal Serial Bus - USB
 
@@ -321,3 +325,5 @@ level = pi.read(12)
 Распиновка используемых контактов микроконтроллера
 
 ![img.png](images/bluepill-pinout.png)
+
+![img.png](images/Lab_2_final.png)

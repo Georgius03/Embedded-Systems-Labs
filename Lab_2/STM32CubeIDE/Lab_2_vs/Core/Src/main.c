@@ -79,6 +79,7 @@ static void MX_TIM4_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+// Function for load data to led panel
 void disp_row(uint16_t row) {
 
 	if (row == 0) {
@@ -178,8 +179,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	while (1)
 	{
-		// ppp = buffer[0];
-
 		// случай, когда массив не заполнен
 		if (hitbox1[0] == 0) {
 			for (int8_t i = WIDTH-1; i >= 0; i--) {
@@ -210,6 +209,7 @@ int main(void)
 			disp1color_DrawPixel(i, hitbox1[i], 1);
 		}
 
+		// Отправка данных в панель
 		disp1color_UpdateFromBuff();
 		prepare_data();
 		for (uint8_t i = 0; i < 20; i++) {
