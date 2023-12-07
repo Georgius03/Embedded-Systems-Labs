@@ -1,6 +1,9 @@
 # **Embedded Systems Labs**
 Лабораторные работы по дисциплине встраиваемые системы
 
+Отчёты доступны по ссылкам:
+1) [Встраиваемые Системы LB1](https://docs.google.com/document/d/1UrHXvWKwPf-k9Jp_3KUeJfyTOnuDMVOFiQFrg_i84bo/edit?usp=sharing)
+2) [Встраиваемые Системы LB2](https://docs.google.com/document/d/1cF8q12bl1bkpEhuTiI_wsJKRJ3gZGmrmgm4hUiwiSrQ/edit?usp=sharing)
 ## Лабораторная работа №1 работа с SPI и P10 Led Board
 В ходе данной работы необходимо написать игру _"змейка"_
 на языке **C**
