@@ -62,8 +62,6 @@ char *heartbeat = "HEARTBEAT\n";
 
 extern uint8_t data1[16], data2[16], data3[16], data4[16];
 
-int16_t ppp = 0;
-
 int8_t hitbox1[WIDTH] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 /* USER CODE END PV */
